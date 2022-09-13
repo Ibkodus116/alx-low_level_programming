@@ -1,10 +1,10 @@
-/*
- * _putchar - 
+#include "main.h"
+/**
+ * main - print out the word _putchar
  *
- *
+ * Return: 0 on success
  */
 
-#include "main.h"
 
 int main(void)
 {
@@ -12,9 +12,10 @@ int main(void)
 	int i;
 
 	int sz = sizeof(word) / sizeof(word[0]);
-	for (i = 0; i < sz; i++){		
+
+	for (i = 0; i < sz; i++)
+
 		_putchar(word[i]);
-	}
 
 	_putchar('\n');
 	return (0);

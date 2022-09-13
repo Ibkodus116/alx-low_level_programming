@@ -1,4 +1,3 @@
-#include "main.c"
 #include "main.h"
 /**
  * main - prints the alphabet, in
@@ -7,7 +6,7 @@
  * Return: 0 on success
  */
 
-int main(void)
+int print_alphabet(void)
 {
 	int i = 0;
 

@@ -5,6 +5,8 @@ repo
 3-main.c
 4-main.c
 5-main.c
+6-main.c
+7-main.c
 1-alphabet
 a.out
 test.c
@@ -12,3 +14,4 @@ test.c
 4-isalpha
 5-sign
 6-abs
+7-last_digit

@@ -2,4 +2,13 @@ _putchar.c
 repo
 .vscode
 2-main.c
+3-main.c
+4-main.c
+5-main.c
 1-alphabet
+a.out
+test.c
+3-islower
+4-isalpha
+5-sign
+6-abs

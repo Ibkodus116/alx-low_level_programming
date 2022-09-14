@@ -1,28 +1,29 @@
 #include "main.h"
 
 /**
- *  _isalpha - Chekc if character passed is alphabet or not
- * @c: The character to check
+ *  print_sign - prints the sign of a number.
+ * @n: The number to check
  *
- * Return: if Alphabet 1.
- * if others , 0 is returned.
+ * Return: 1 and prints + if n is greater than zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is less than zeroAlphabet 1.
  */
 
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-        _putchar(43);
+		_putchar(43);
 		return (1);
 	}
 	else if (n == 0)
 	{
-        _putchar(48);
+		_putchar(48);
 		return (0);
 		}
 	else
 	{
-        _putchar(45);
+		_putchar(45);
 		return (-1);
 	}
 }

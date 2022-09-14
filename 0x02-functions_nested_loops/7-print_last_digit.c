@@ -19,6 +19,7 @@ int print_last_digit(int x)
 	}
 	else
 	{
-		return (_putchar(f + '0'));
+		_putchar(f + '0');
+		return (f);
 	}
 }

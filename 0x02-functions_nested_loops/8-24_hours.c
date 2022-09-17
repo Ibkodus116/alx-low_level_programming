@@ -3,29 +3,43 @@
  * jack_bauer - print bauer 24hour time
  *
  */
+
 void jack_bauer(void)
 {
-	int j, k, x, n;
+	int i, j, k, l;
 
-	for (x = '0'; x <= '2'; x++)
+	for (i = '0'; i <= '2'; i++)
 	{
-		for (n = '0'; n <= '3'; n++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			for (j = '0'; j <= '5'; j++)
+			for (k = '0'; k <= '5'; k++)
 			{
-				for (k = '0'; k <= '9'; k++)
+				for (l = '0'; l <= '9'; l++)
 				{
 
-					_putchar(x);
-					_putchar(n);
-					_putchar(':');
+					if (i >= '2' && j >= '4')
+						break;
+					_putchar(i);
 					_putchar(j);
+					_putchar(':');
 					_putchar(k);
+					_putchar(l);
 					_putchar('\n');
-
+/*
+						_putchar('s');
+						_putchar('t');
+						_putchar('o');
+						_putchar('p');
+						_putchar('p');
+						_putchar('p');
+						_putchar('p');
+						_putchar('p');
+						_putchar('p');
+						_putchar('p');
+						_putchar('\n');
+*/
 				}
 			}
 		}
 	}
-
 }

@@ -19,7 +19,7 @@ int main(void)
 		n1 = n2;
 		n2 = n3;
 
-		if (i != 48)
+		if (i != 50)
 		{
 			printf(", ");
 		}

@@ -20,7 +20,7 @@ int main(void)
 		n1 = n2;
 		n2 = n3;
 
-		if (i != 91)
+		if (i != 99)
 		{
 			printf(", ");
 		}

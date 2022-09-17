@@ -9,6 +9,8 @@ repo
 7-main.c
 8-main.c
 9-main.c
+10-main.c
+11-main.c
 1-alphabet
 a.out
 test.c
@@ -19,3 +21,5 @@ test.c
 7-last_digit
 8-24
 9-times_table
+10-add
+11-98

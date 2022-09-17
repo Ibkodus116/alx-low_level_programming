@@ -25,19 +25,6 @@ void jack_bauer(void)
 					_putchar(k);
 					_putchar(l);
 					_putchar('\n');
-/*
-						_putchar('s');
-						_putchar('t');
-						_putchar('o');
-						_putchar('p');
-						_putchar('p');
-						_putchar('p');
-						_putchar('p');
-						_putchar('p');
-						_putchar('p');
-						_putchar('p');
-						_putchar('\n');
-*/
 				}
 			}
 		}

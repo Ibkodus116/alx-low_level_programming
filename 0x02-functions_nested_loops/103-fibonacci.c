@@ -13,18 +13,16 @@ int main(void)
 	n2 = 1;
 
 
-	for (i = 2; i < 12; ++i)
+	for (i = 2; i <= 33; ++i)
 	{
 		n3 = n1 + n2;
 		if (n3 % 2 == 0)
 		{
 			sum += n3;
-			printf("%d, ", sum);
 		}
 		n1 = n2;
 		n2 = n3;
 	}
-		printf("\n");
 		printf("%d", sum);
 		printf("\n");
 	return (0);

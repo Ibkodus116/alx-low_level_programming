@@ -15,16 +15,20 @@ char *str_concat(char *s1, char *s2)
 	char *str1;
 	unsigned int i, j, k, x;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
 	}
 	for (i = 0; s1[i] != '\0'; i++)
 		;
 	for (j = 0; s2[j] != '\0'; j++)
 		;
 
-	str1 = (char *) malloc(sizeof(char) * (i + 1));
+	str1 = (char *) malloc(sizeof(char) * (i + j + 1));
 
 	if (str1 == NULL)
 	{

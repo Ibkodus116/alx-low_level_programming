@@ -8,16 +8,16 @@
 */
 void print_all(const char * const format, ...)
 {
-	int str_len = strlen(format);
+    char *s;
+    int str_len = strlen(format);
 	va_list str;
-	va_start(str, format);
+	int i,x = 0;
 
-	char *s;
-	int i = 0;
+	va_start(str, format);
 
 	while (i < str_len)
 	{
-		int x = 1;
+		x = 1;
 		switch (format[i])
 		{
 		case 'c':

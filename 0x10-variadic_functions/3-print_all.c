@@ -49,9 +49,3 @@ void print_all(const char * const format, ...)
 	va_end(str);
 	printf("\n");
 }
-
-int main(void)
-{
-	print_all("ceis", 'B', 3, "stSchool");
-	return (0);
-}

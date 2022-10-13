@@ -1,6 +1,6 @@
-#include <stddef.h>
-#ifndef FUNCT_
-#define FUNCT_
+#ifndef FUNCTION_POINTERS_
+#define FUNCTION_POINTERS_
+#include <stdlib.h>
 
 int int_index(int *array, int size, int (*cmp)(int));
 void print_name(char *name, void (*f)(char *));

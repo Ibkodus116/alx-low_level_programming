@@ -10,10 +10,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sNum, fNum = 0, len;
 	unsigned int pow = 1;
-    if (!b)
-    {
-        return(0);
-    }
+
+	if (!b)
+		return (0);
 
 
 	for (len = 0; b[len] != '\0' ; pow *= 2, len++)

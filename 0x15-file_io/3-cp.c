@@ -64,7 +64,7 @@ int main(int ac, char **av)
 	cl_ft = close(file_to);
 	if (cl_ft == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_to);
+		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_from);
 		exit(100);
 	}
 	free(buf);

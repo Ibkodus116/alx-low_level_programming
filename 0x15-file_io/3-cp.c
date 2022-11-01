@@ -31,9 +31,8 @@ void errors(int file_from, int file_to, char **av)
 int main(int ac, char **av)
 {
 	int file_from, file_to, rd_ff, wr_ft, cl_ft, cl_ff;
-	char *buf;
+	char buf[1024];
 
-	buf = malloc(sizeof(char) * 1024);
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
@@ -67,6 +66,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_to);
 		exit(100);
 	}
-	free(buf);
+
 	return (0);
 }

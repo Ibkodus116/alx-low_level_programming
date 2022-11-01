@@ -43,18 +43,18 @@ int main(int ac, char **av)
 	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	errors(file_from, file_to, av);
 
-	rd_ff = read(file_from, buf, 1024);
-	if (rd_ff == -1)
+	rd_ff = 1024;
+	while (rd_ff == 1024)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", av[1]);
-		exit(98);
+		rd_ff = read(file_from, buf, 1024);
+		if (rd_ff == -1)
+			errors(-1, 0, av);
+
+		wr_ft = write(file_to, buf, rd_ff);
+		if (wr_ft == -1)
+			errors(0, -1, av);
 	}
-	wr_ft = write(file_to, buf, rd_ff);
-	if (wr_ft == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
-		exit(99);
-	}
+
 	cl_ff = close(file_from);
 	if (cl_ff == -1)
 	{

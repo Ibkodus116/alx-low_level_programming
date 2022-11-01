@@ -31,15 +31,16 @@ void errors(int file_from, int file_to, char **av)
 int main(int ac, char **av)
 {
 	int file_from, file_to, rd_ff, wr_ft, cl_ft, cl_ff;
-	char buf[1024];
+	char *buf;
 
+	buf = malloc(sizeof(char) * 1024);
 	if (ac != 3)
 	{
 		dprintf(STDERR_FILENO, "%s", "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	file_from = open(av[1], O_RDONLY);
-	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	errors(file_from, file_to, av);
 
 	rd_ff = 1024;
@@ -66,6 +67,6 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, "Error: Can't write to %d\n", file_to);
 		exit(100);
 	}
-
+	free(buf);
 	return (0);
 }

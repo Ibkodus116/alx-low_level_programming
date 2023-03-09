@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-
+'''Module Doc
+'''
 def island_perimeter(grid):
+    '''Function Doc
+    '''
     if not grid or not grid[0]:
         return 0  # empty grid
 

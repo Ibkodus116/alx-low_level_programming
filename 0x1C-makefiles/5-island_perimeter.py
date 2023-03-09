@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 '''Module Doc
 '''
+
+
 def island_perimeter(grid):
     '''Function Doc
     '''
